@@ -36,22 +36,6 @@ ol {
     display: block;
 }
 
-.icon {
-    display: flex;
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
-    margin-bottom: 8px;
-    width: 264px;
-    height: 108px;
-    padding: 24px 100px;
-    background-color: #F4F4FD;
-}
-
-.icon-container {
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
-}
-
 /*======title-h2=======*/
 
 .mision-title,
@@ -259,6 +243,17 @@ ol {
     margin-bottom: 8px;
 }
 
+.icon {
+    display: flex;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    width: 264px;
+    height: 108px;
+    padding: 24px 100px;
+    background-color: #F4F4FD;
+}
+
 /*=========3-section========*/
 
 .team {
@@ -282,6 +277,8 @@ ol {
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background-color: #fff;
+    width: 264px;
+    height: 428px;
 }
 
 .team-info {
@@ -296,6 +293,12 @@ ol {
 .text-team {
     text-align: center;
     font-size: 16px;
+}
+
+.icon-apps {
+    display: inline-flex;
+    width: 40gipx;
+    height: 40px;
 }
 
 /*=========4-section=========*/
