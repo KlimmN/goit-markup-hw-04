@@ -36,6 +36,22 @@ ol {
     display: block;
 }
 
+.icon {
+    display: flex;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    width: 264px;
+    height: 108px;
+    padding: 24px 100px;
+    background-color: #F4F4FD;
+}
+
+.icon-container {
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+}
+
 /*======title-h2=======*/
 
 .mision-title,
@@ -163,7 +179,10 @@ ol {
     background-color: #2e2f42;
     line-height: 1.07;
     padding: 188px 0;
-    background-image: url(../images/team/people-office.jpg);
+    background-image: linear-gradient(to bottom,
+            rgba(22, 18, 45, 0.7),
+            rgba(22, 18, 45, 0.7)),
+            url(../images/team/people-office.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
