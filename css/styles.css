@@ -326,6 +326,14 @@ ol {
     gap: 24px;
 }
 
+.icon-list .icon-item {
+    height: 40px;
+}
+
+.icon-item .icon-link {
+    height: 100%;
+}
+
 .icon-item a {
     display: flex;
     justify-content: center;
@@ -402,8 +410,8 @@ ol {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.port-list-item .overly,
-.port-list-item .overly {
+.port-list-item:hover .overly,
+.port-list-item:focus .overly {
     transform: translateY(0);
 }
 
