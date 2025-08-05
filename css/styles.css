@@ -70,6 +70,9 @@ ol {
 
 .had {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .navigation-container {
@@ -114,7 +117,25 @@ ol {
     display: block;
     font-weight: 500;
     color: #2e2f42;
-    padding: 24px 0;;
+    padding: 24px 0;
+
+}
+
+.menu .home {
+    position: relative;
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu .home::after {
+    content:'';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
 }
 
 .info .cont:focus,
@@ -155,6 +176,7 @@ ol {
    color: #434455;
    display: block;
    padding: 24px 0;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*====main-1section====*/
@@ -168,6 +190,8 @@ ol {
             url(../images/team/people-office.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    max-width: 1440px;
+    background-position: center;
 }
 
 .hero-container {
@@ -200,6 +224,7 @@ ol {
     min-width: 169px;
     padding: 16px 32px;
     background: #4d5ae5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -242,15 +267,15 @@ ol {
     margin-bottom: 8px;
 }
 
-.icon {
+.mision-container-icons {
     display: flex;
-    border: 1px solid #8E8F99;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
     border-radius: 4px;
+    border: 1px solid #8e8f99;
     margin-bottom: 8px;
-    width: 264px;
-    height: 108px;
-    padding: 24px 100px;
-    background-color: #F4F4FD;
 }
 
 /*=========3-section========*/
@@ -319,7 +344,12 @@ ol {
 }
 
 .icon-apps {
-   fill: #fff;
+   fill: #f4f4fd;
+}
+
+.contact-team {
+    width: 100%;
+    height: 100%;
 }
 
 /*=========4-section=========*/
@@ -342,6 +372,7 @@ ol {
 
 .port-list-item {
     width: calc((100% - 48px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-case-info {
@@ -371,8 +402,8 @@ ol {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.port-list-item .overly:hover,
-.port-list-item .overly:focus {
+.port-list-item .overly,
+.port-list-item .overly {
     transform: translateY(0);
 }
 
@@ -440,5 +471,6 @@ ol {
 
 .bottom-container {
     display: flex;
-    gap: 120px;
+    align-items: baseline;
+    margin-right: 120px;
 }
