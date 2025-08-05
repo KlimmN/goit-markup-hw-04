@@ -415,6 +415,10 @@ ol {
 
 /*====footer====*/
 
+.logo-container {
+    margin-right: 120px;
+}
+
 .bottom-content {
     background: #2e2f42;
     padding: 100px 0;
